@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "termhype",
+  "version": "${version}",
+  "name": "Terminally Hypixel",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/minhp/TerminallyHypixel"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.minhperry.fabric.termhype.client.TerminallyHypixelClient"
+    ]
+  },
+  "mixins": [
+    "termhype.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "fabric-language-kotlin": ">=1.11.0+kotlin.2.0.0"
+  }
+}
