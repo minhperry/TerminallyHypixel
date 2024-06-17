@@ -12,7 +12,13 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "dev.minhperry.fabric.termhype.client.TerminallyHypixelClient"
+      {
+        "adapter": "kotlin",
+        "value": "dev.minhperry.fabric.termhype.TerminallyHypixel"
+      }
+    ],
+    "preLaunch": [
+      "dev.minhperry.fabric.termhype.devenv.PreLaunch"
     ]
   },
   "mixins": [
@@ -23,5 +29,6 @@
     "fabric": "*",
     "minecraft": "${minecraft_version}",
     "fabric-language-kotlin": ">=1.11.0+kotlin.2.0.0"
-  }
+  },
+  "icon": "icons/mod-icon/hyperion.png"
 }
